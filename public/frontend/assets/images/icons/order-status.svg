@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.38" height="17.867" viewBox="0 0 14.38 17.867">
+  <g id="order-status" transform="translate(-0.531 -0.478)">
+    <g id="Rectangle" transform="translate(0.531 2.168)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.1">
+      <rect width="14.38" height="16.177" rx="3.158" stroke="none"/>
+      <rect x="0.55" y="0.55" width="13.28" height="15.077" rx="2.608" fill="none"/>
+    </g>
+    <g id="Rectangle-2" data-name="Rectangle" transform="translate(3.553 0.478)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1.1">
+      <rect width="8.597" height="4.918" rx="2.368" stroke="none"/>
+      <rect x="0.55" y="0.55" width="7.497" height="3.818" rx="1.818" fill="none"/>
+    </g>
+    <path id="Path_11" data-name="Path 11" d="M0,.3H6.53" transform="translate(4.366 8.72)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+    <path id="Path_11-2" data-name="Path 11" d="M0,.395H4.084" transform="translate(4.366 11.512)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+  </g>
+</svg>

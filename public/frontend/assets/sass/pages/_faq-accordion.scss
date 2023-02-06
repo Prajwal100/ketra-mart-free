@@ -1,0 +1,134 @@
+.faq-accordion-tab {
+	.tabs {
+		padding-left: 0;
+		list-style-type: none;
+		margin-bottom: 60px;
+		text-align: center;
+		li {
+			margin-left: 10px;
+			margin-right: 10px;
+			a {
+				color: #000;
+				text-decoration: none;
+				border-radius: 5px;
+				padding: 20px;
+				display: block;
+				-webkit-box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, .13) !important;
+				box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, .13) !important;
+				font-size: 17px;
+				font-weight: 700;
+				i {
+					font-size: 30px;
+				}
+				span {
+					display: block;
+					margin-top: 8px;
+				}
+				&:hover {
+					background-color: #f53f85;
+					color: #fff;
+				}
+			}
+		}
+		li.current {
+			a {
+				background-color: #f53f85;
+				color: #fff;
+			}
+		}
+	}
+}
+.tab {
+	.tabs-item {
+		display: none;
+		&:first-child {
+			display: block;
+		}
+	}
+}
+.faq-accordion {
+	.accordion {
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		.accordion-item {
+			background: #fff;
+			margin-bottom: 15px;
+			border-bottom: 1px solid $border-color;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.accordion-title {
+			padding: 20px 25px 17px 18px;
+			color: #000;
+			text-decoration: none;
+			position: relative;
+			display: block;
+			font-size: 16px;
+			font-weight: 700;
+			i {
+				position: absolute;
+				right: 0;
+				top: 18px;
+				font-size: 16px;
+				-webkit-transition: .5s;
+				transition: .5s;
+				color: $primary-color;
+			}
+		}
+		.accordion-title.active {
+			i {
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				&::before {
+					content: "\eb56";
+				}
+			}
+		}
+		.accordion-content {
+			display: none;
+			position: relative;
+			margin-top: -5px;
+			padding-bottom: 20px;
+			padding-right: 25px;
+			padding-left: 18px;
+			font-size: 14px;
+			font-family: $font-family-Roboto;
+			line-height: 28px;
+			p {
+				font-size: 16px;
+				line-height: 1.8;
+			}
+			ul {
+				padding-left: 0;
+				list-style-type: none;
+				margin-bottom: 0;
+				li {
+					color: #777;
+					position: relative;
+					margin-bottom: 12px;
+					line-height: 25px;
+					padding-left: 15px;
+					font-size: 16px;
+					&::before {
+						content: '';
+						position: absolute;
+						top: 10px;
+						left: 0;
+						width: 6px;
+						height: 6px;
+						background: #f53f85;
+						border-radius: 50%;
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.accordion-content.show {
+			display: block;
+		}
+	}
+}

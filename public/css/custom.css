@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.create-btn,.cancel-btn{
+    border-radius: 30px;
+    padding:6px 20px;
+}
+
+.additional_image{
+    padding: 0;
+    max-width: 24%;
+    margin-right: 6px;
+    margin-left: 16px;
+}
+
+/*#thumb-image #input-image-f img,.additional-images .display-imput-image img {*/
+/*    height: 160px;*/
+/*    width: 160px;*/
+/*    background-size: cover;*/
+/*}*/

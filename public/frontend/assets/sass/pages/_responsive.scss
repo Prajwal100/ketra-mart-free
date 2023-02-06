@@ -1,0 +1,319 @@
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+
+@media screen and (max-width: 1199.99px) {
+  .header-contact-info li,
+  .header-top-menu li {
+    font-size: 12.5px;
+  }
+  .search-form {
+    margin-left: 35px;
+  }
+  .header-widgets-menu li a span {
+    font-size: 14px;
+  }
+
+  .main-nav .navbar .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .responsive-nav {
+    .humberger__open {
+      i {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .menu {
+        font-family: $font-family-Roboto;
+        margin-top: -9px;
+      }
+    }
+
+    .logo {
+      .responsive-logo {
+        height: 1.3rem;
+      }
+    }
+
+    .search-toggle {
+      i {
+        font-size: 20px;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .cart-link {
+      position: relative;
+
+      .count-badge {
+        position: absolute;
+        right: 0;
+        top: -5px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 19px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $secondary-color;
+        font-size: 10.5px;
+        font-weight: 600;
+        left: 11px;
+      }
+    }
+
+    .contact-link {
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .search-container::before {
+    left: 145px;
+  }
+
+  .footer-customer-center,
+  .footer-contact {
+    margin-top: 3rem;
+  }
+  .footer-bottom-area .payment-types li {
+    margin-right: 2rem;
+  }
+
+  .form-content {
+    padding: 20px;
+  }
+
+  .widget-area .widget .widget-title span {
+    display: none;
+  }
+
+  .productsFilterModal {
+    .modal-content {
+      button {
+        font-size: 12px;
+        width: 30%;
+      }
+
+      .secondary-btn {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .selected-filters-wrap-list {
+    margin-top: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .section-title span {
+    display: none;
+  }
+
+  .search-container::before {
+    left: 100px;
+  }
+
+  .footer-bottom-area .payment-types li {
+    margin: 12px;
+  }
+  .footer-menu-area {
+    padding-top: 1rem !important;
+  }
+
+  .single-footer-widget h3 {
+    display: none;
+  }
+
+  .footer__about-us {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 !important;
+  }
+  .footer-customer-center,
+  .footer-contact {
+    text-align: center;
+  }
+
+  .sidebar-tab-content .title {
+    margin-top: 1rem;
+  }
+
+  // Product List Page
+  .page-title-area {
+    display: none;
+  }
+
+  .product-category-title {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .products-filter-options .products-ordering-list {
+    margin-left: 0;
+  }
+
+  .filter-wrapper {
+    text-align: right;
+  }
+
+  .pagination-area .page-numbers.next,
+  .pagination-area .page-numbers.prev {
+    font-size: 12px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .productsFilterModal .modal-content button {
+    font-size: 10px;
+    width: 40%;
+  }
+
+  .social-link-icons {
+    display: none !important;
+  }
+
+  .products-details-desc h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .products-details-desc .price .old-price {
+    font-size: 14px;
+  }
+
+  .product-details-area {
+    
+  }
+
+  .products-details-desc {
+    position: relative;
+    top: -10%;
+    margin-top: 30px;
+    background: #fff;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 1px 0px 18px 7px #f5f5f5;
+    padding: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .single-products-box .products-content h3 {
+    font-size: 14px;
+  }
+  .single-products-box .products-content .price .new-price {
+    font-size: 16px;
+  }
+
+  .footer-bottom-area {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wishlist-btn a {
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+
+    font-size: 18px;
+  }
+  .search-container::before {
+    left: 83px;
+  }
+
+  .products-filter-options .products-ordering-list .nice-select .list .option {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .mobile-menu__signin button {
+    font-size: 12px;
+  }
+  .search-container::before {
+    left: 4rem;
+  }
+
+  .single-products-box .products-content h3 {
+    font-size: 12px;
+  }
+  .single-products-box .products-content .price .new-price {
+    font-size: 14px;
+  }
+
+  .form-content .form-wrapper .social-login-links a {
+    width: 108.53px;
+    height: 38px;
+    font-size: 12px;
+  }
+
+  .widget-area .filter-list-widget .selected-filters-wrap-list ul li {
+    width: 48%;
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .wishlist-btn {
+    position: absolute;
+    top: 12px;
+    left: -66px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .responsive-nav .contact-link i {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cart-link {
+    img {
+      height: 1.3rem;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu__signin {
+    button {
+      font-size: 12px;
+    }
+  }
+
+  .mobileMenuModal
+    .modal-content
+    .modal-body
+    .mobile-navigation-menu
+    ul
+    li
+    a
+    span,
+  .productsFilterModal
+    .modal-content
+    .modal-body
+    .mobile-navigation-menu
+    ul
+    li
+    a
+    span {
+    font-size: 13px;
+  }
+}

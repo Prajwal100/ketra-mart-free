@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79.323" height="20.876" viewBox="0 0 79.323 20.876">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H79.322V20.876H0Z" transform="translate(0.008 0.148)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_9" data-name="Clip 9" d="M0,0H50.069V4.477H0Z" transform="translate(0.008 0.118)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="DHL_Copy" data-name="DHL Copy" transform="translate(-0.008 -0.148)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H79.322V20.876H0Z" transform="translate(0.008 0.148)" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,20.886H79.331V0H0Z" transform="translate(0 0.148)" fill="#f9c623"/>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M2.535,0,0,4.108H13.814c.7,0,.689.317.348.868s-.927,1.534-1.28,2.1c-.179.289-.5.814.57.814H19.1s.911-1.478,1.674-2.714C21.813,3.5,20.865,0,17.153,0H2.535" transform="translate(11.416 3.899)" fill="#c52038"/>
+    <path id="Fill_5" data-name="Fill 5" d="M0,8.252,5.091,0h6.318c.7,0,.689.317.348.868S10.82,2.392,10.467,2.96c-.179.289-.5.815.57.815H19.5c-.7,1.15-2.987,4.477-7.087,4.477H0" transform="translate(10.391 9.03)" fill="#c52038"/>
+    <path id="Fill_6" data-name="Fill 6" d="M10.043,0,7.282,4.478H0S2.759,0,2.762,0h7.281" transform="translate(29.503 12.805)" fill="#c52038"/>
+    <path id="Fill_7" data-name="Fill 7" d="M17.812,7.893H0L4.871,0h7.28L9.359,4.526h3.25L15.4,0h7.279L17.812,7.893" transform="translate(32.89 3.899)" fill="#c52038"/>
+    <g id="Group_13" data-name="Group 13" transform="translate(0 12.687)">
+      <path id="Clip_9-2" data-name="Clip 9" d="M0,0H50.069V4.477H0Z" transform="translate(0.008 0.118)" fill="none"/>
+      <g id="Group_13-2" data-name="Group 13" clip-path="url(#clip-path-2)">
+        <path id="Fill_8" data-name="Fill 8" d="M10.042,0,7.28,4.477H0S2.759,0,2.762,0h7.28" transform="translate(40.035 0.118)" fill="#c52038"/>
+        <path id="Fill_10" data-name="Fill 10" d="M0,0H10.728l-.586.951H0V0" transform="translate(0 1.883)" fill="#c52038"/>
+        <path id="Fill_11" data-name="Fill 11" d="M0,0H11.818l-.587.95H0V0" transform="translate(0 0.118)" fill="#c52038"/>
+        <path id="Fill_12" data-name="Fill 12" d="M0,0H9.639L9.055.945H0V0" transform="translate(0 3.65)" fill="#c52038"/>
+      </g>
+    </g>
+    <path id="Fill_14" data-name="Fill 14" d="M10.687.951H0L.586,0h10.1V.951" transform="translate(68.644 14.571)" fill="#c52038"/>
+    <path id="Fill_15" data-name="Fill 15" d="M11.773.945H0L.583,0h11.19V.945" transform="translate(67.558 16.337)" fill="#c52038"/>
+    <path id="Fill_16" data-name="Fill 16" d="M.586,0H9.6V.95H0L.586,0" transform="translate(69.733 12.806)" fill="#c52038"/>
+    <path id="Fill_17" data-name="Fill 17" d="M12.584,0,7.714,7.893H0S4.871,0,4.874,0h7.711" transform="translate(53.07 3.899)" fill="#c52038"/>
+    <path id="Fill_18" data-name="Fill 18" d="M1.147,0S.614.868.356,1.285C-.559,2.759.25,4.477,3.234,4.477H14.926L17.687,0H1.147" transform="translate(51.299 12.806)" fill="#c52038"/>
+  </g>
+</svg>

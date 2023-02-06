@@ -1,0 +1,52 @@
+:root {
+  --color-gold: #ffc41f;
+  --color-gold-light: #ffd560;
+}
+
+.comment-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.comment-stars-input {
+  display: none;
+}
+
+.comment-stars-input:checked ~ .comment-stars-view svg {
+  fill: var(--color-gold);
+}
+
+.comment-stars-input:checked ~ .comment-stars-view:hover svg,
+.comment-stars-input:checked
+  ~ .comment-stars-view:hover
+  ~ .comment-stars-view
+  svg {
+  fill: var(--color-gold-light);
+}
+
+.comment-stars-view {
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.comment-stars-view svg {
+  fill: #ededef;
+  width: 1.39306640625em;
+  height: 1.5em;
+}
+
+.comment-stars-view.is-half {
+  transform: translateX(100%);
+  margin-left: -0.69580078125em;
+}
+
+.comment-stars-view.is-half svg {
+  width: 0.69580078125em;
+}
+
+.comment-stars-view:hover svg,
+.comment-stars-view:hover ~ .comment-stars-view svg {
+  fill: var(--color-gold-light);
+}

@@ -1,0 +1,87 @@
+.sidebar-tabs {
+  h6 {
+    font-family: $font-family-Roboto;
+    font-size: 16px;
+  }
+
+  a.nav-link {
+    font-family: $font-family-Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0;
+    margin-bottom: 4px;
+  }
+
+  .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: #ffeeef;
+    color: $secondary-color;
+    border-left: 3px solid $secondary-color;
+  }
+}
+
+.sidebar-tab-content {
+  .title {
+    font-size: 28px;
+  }
+
+  .desc-content {
+    p {
+      font-size: 14px;
+      font-family: $font-family-Roboto;
+      text-align: justify;
+      line-height: 28px;
+
+      .desc-content-initial {
+        font-size: 35px;
+        letter-spacing: -6px;
+      }
+    }
+  }
+
+  .why-choose-us {
+    h6 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      li {
+        font-size: 14px;
+        font-family: "Roboto";
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+
+        span {
+          display: inline-block;
+          margin-right: 0.5rem;
+
+          img {
+            height: 100%;
+            width: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.border-bottom-dashed{
+  border-style: dashed;
+}
+
+.menu-list {
+  ul {
+    li {
+      a {
+        font-family: $font-family-Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

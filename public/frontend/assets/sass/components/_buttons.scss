@@ -1,0 +1,124 @@
+.default-btn {
+  display: inline-block;
+  border: none;
+  padding: 10px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  background-color: $secondary-color;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.default-btn:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.optional-btn {
+  display: inline-block;
+  border: 1px solid $border-color;
+  padding: 10px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.optional-btn:hover {
+  background-color: $secondary-color;
+  color: #fff;
+  border-color: $secondary-color;
+}
+
+.primary-btn {
+  background-color: $primary-color;
+  transition: all 0.3s linear;
+
+  &:hover {
+    opacity: 0.5;
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+.secondary-btn {
+  width: 65%;
+  height: 50px;
+  background: $secondary-color;
+  box-shadow: $box-shadow;
+  transition: all 0.3s linear;
+
+  span {
+    font-size: 18px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+    color: #fff;
+    background-color: $secondary-color;
+  }
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 12px;
+  left: -83px;
+  a {
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 63px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 50px;
+    text-align: center;
+    bottom: 1rem;
+  
+    .wishlist-icon {
+      color: #8c8e94;
+    }
+
+    &:hover .wishlist-icon {
+      color: $secondary-color;
+    }
+  }
+}
+
+.btn-outline {
+  height: 40px;
+  width: 40%;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  &:hover , &:focus{
+    background: $primary-color;
+    color: #fff;
+  } 
+}
+
+.sign-up-btn {
+  height: 40px;
+  width: 40%;
+  border: 1px solid #ff5a60;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

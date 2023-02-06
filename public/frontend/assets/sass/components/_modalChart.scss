@@ -1,0 +1,222 @@
+.modal-chart__link {
+  font-size: 12px;
+  font-family: $font-family-Roboto;
+  color: $primary-color !important;
+  text-decoration: underline !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background: $secondary-color;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+.products-details-title a:hover::before {
+  width: 100%;
+}
+
+// Sizing Guide, Color Chart
+.sizeGuideModal,
+.colorChartModal,
+.customSizeModal,
+.reviewModal {
+  .modal-dialog {
+    // max-width: 900px;
+    max-width: 698px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    border: none;
+    padding: 40px;
+    border-radius: 8px;
+    button.close {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      outline: 0;
+      opacity: 1;
+      color: #000;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      line-height: 42px;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      width: 35px;
+      text-shadow: unset;
+      height: 35px;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      &:hover {
+        background-color: red;
+        color: #fff;
+      }
+    }
+    .modal-sizeguide,
+    .modal-colorChart {
+      text-align: center;
+      h3 {
+        margin-bottom: 7px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      .table {
+        margin-bottom: 0;
+        thead {
+          background-color: #000;
+          color: #fff;
+          th {
+            border-bottom: none;
+            white-space: nowrap;
+            color: #fff;
+            vertical-align: middle;
+            padding: 10px 12px;
+          }
+        }
+        tr {
+          td {
+            border-top: none;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 12px;
+            padding: 10px 12px;
+          }
+          th {
+            border-top: none;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 12px;
+            padding: 10px 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Color Chart
+.modal-colorChart {
+  .colors-tabs-section {
+    ul {
+      li {
+        a {
+          color: #000;
+          font-size: 14px;
+          font-family: $font-family-Roboto;
+        }
+
+        a.active {
+          background: none;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+// Custom Size
+.modal-customSize {
+  .customSize__form-wrapper {
+    ul.nav {
+      h6 {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 2rem;
+      }
+
+      li.nav-item {
+        a {
+          padding: 4px 14px;
+          line-height: 18px;
+          background: transparent;
+          border: 1px solid $border-color;
+          color: #000;
+          font-family: $font-family-Roboto;
+          margin-right: 0.8rem;
+        }
+
+        a.active {
+          background-color: $secondary-color;
+          border: 1px solid $secondary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.form-btns {
+  .btn-cancel {
+    border: 1px solid $border-color;
+    background: transparent;
+    box-shadow: none;
+    width: 30%;
+
+    &:hover {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+
+  .btn-save {
+    width: 30%;
+    border: 1px solid $secondary-color;
+    color: #fff;
+  }
+}
+
+.modal-review {
+  .product-details {
+    .img-wrapper {
+      width: 20%;
+
+      img {
+        border-radius: 4px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .content-wrapper {
+      width: 50%;
+
+      h1 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #2f2f30;
+        font-family: $font-family-Roboto;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .review-form {
+    .form-group {
+      .form-control {
+        max-width: 100%;
+      }
+
+      textarea {
+        height: 120px;
+      }
+    }
+  }
+
+  .form-btns{
+    .btn-save{
+      background-color: $primary-color;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}

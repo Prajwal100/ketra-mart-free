@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="46.923" viewBox="0 0 45 46.923">
+  <g id="marker" transform="translate(0 -0.309)">
+    <ellipse id="Oval" cx="22.5" cy="23.462" rx="22.5" ry="23.462" transform="translate(0 0.309)" fill="#55a2a6"/>
+    <g id="frame-landscape" transform="translate(12.214 15.396)">
+      <path id="Shape" d="M.326,16.9A.332.332,0,0,1,0,16.557V.339A.333.333,0,0,1,.326,0H20.219a.333.333,0,0,1,.326.339V16.557a.332.332,0,0,1-.326.339Z" transform="translate(0 0.022)" fill="#fff"/>
+      <path id="Path" d="M1.6,3.331a1.632,1.632,0,0,0,1.6-1.665A1.633,1.633,0,0,0,1.6,0,1.632,1.632,0,0,0,0,1.665,1.632,1.632,0,0,0,1.6,3.331Z" transform="translate(12.078 3.631)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

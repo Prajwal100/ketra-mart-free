@@ -1,0 +1,32 @@
+@import "base/variables";    
+@import "base/colors";
+@import "base/utility";
+@import "base/reset";   
+
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+
+@import "components/breadcrumb";
+@import "components/currencySwitcher";
+@import "components/sliders";
+@import "components/form";
+@import "components/filter";
+@import "components/accordion";
+@import "components/colorFilter";
+@import "components/pagination";
+@import "components/modalChart";
+@import "components/inputForm";
+@import "components/buttons";
+@import "components/slickSlider";
+@import "components/sidebarTab";
+@import "components/rating";
+@import "components/searchForm";
+@import "components/sidebar-menu";
+
+@import "pages/product-list";
+@import "pages/product-detail";
+@import "pages/cart";
+@import "pages/login";
+@import "pages/faq-accordion";
+@import "pages/responsive";

@@ -1,0 +1,438 @@
+.widget-area {
+  margin-top: 0.6rem;
+  .widget {
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f5f5f5;
+
+    .widget-title {
+      position: relative;
+      font-size: 18px;
+      font-weight: 700;
+
+      span {
+        font-size: 14px;
+        font-family: $font-family-Roboto;
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .filter-list-widget {
+    .selected-filters-wrap-list {
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin-bottom: 9px;
+          font-size: 14px;
+          font-weight: 600;
+          background-color: #ffecee;
+          border-radius: 13.5px;
+          height: 30px;
+          width: 124px;
+
+          a {
+            position: relative;
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            color: $secondary-color;
+            font-family: $font-family-Roboto;
+            i {
+              display: inline-block;
+              background-color: $secondary-color;
+              width: 18px;
+              height: 18px;
+              color: #fff;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 19px;
+              position: absolute;
+              right: 7px;
+              top: 6px;
+              padding-left: 1px;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .delete-selected-filters {
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        &:hover {
+          color: red;
+        }
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .silhouette-list-widget {
+    .silhouette-list-row {
+      li {
+        display: inline-block;
+        position: relative;
+
+
+        input{
+          position: absolute;
+        }
+
+        a {
+          display: inline-block;
+          text-align: center;
+          min-width: 80px;
+
+          &:hover {
+            img {
+              opacity: 9;
+            }
+          }
+
+          img {
+            opacity: 0.2;
+          }
+
+          .image-name {
+            display: block;
+            font-size: 14px;
+            font-family: $font-family-Roboto;
+            margin-top: 10px;
+          }
+
+          .active-oval {
+            display: inline-block;
+            width: 8.2px;
+            height: 8.2px;
+            background: $secondary-color;
+            box-shadow: 0px ​1px 2px 0px $secondary-color;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            margin-top: 10px;
+            opacity: 0;
+            transition: all 0.4s linear;
+          }
+        }
+      }
+
+      li.active {
+        a {
+          img {
+            opacity: 1;
+          }
+
+          .active-oval {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .collections-list-widget {
+    .collections-list-row {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      li {
+        margin-bottom: 9px;
+        a {
+          display: inline-block;
+          position: relative;
+          padding-left: 25px;
+          font-size: 15px;
+          font-weight: 600;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2.5px;
+            width: 15px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            height: 15px;
+            border-radius: 4px;
+            border: 1px solid #000;
+          }
+          &:hover {
+            color: $secondary-color;
+            &::before {
+              border-color: $secondary-color;
+            }
+          }
+        }
+        a.active {
+          &::before {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+          }
+        }
+        &:last-child {
+          display: inline-block;
+        }
+      }
+      li.active {
+        a {
+          &::before {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .price-list-widget {
+    .collection-filter-by-price {
+      margin-top: 20px;
+      margin-bottom: 48px;
+      .irs-handle {
+        cursor: pointer;
+        top: 16px;
+      }
+      .irs--flat {
+        .irs-line {
+          background-color: $secondary-color;
+          border-radius: 7.5px;
+          opacity: 0.1;
+          height: 7px;
+        }
+        .irs-min {
+          background-color: transparent;
+          width: 50%;
+          height: 32px;
+          color: #000;
+          padding: 1px 5px 1px 14.5px;
+          border: 1px solid #ebebeb;
+          top: 4rem;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            content: "$";
+            position: absolute;
+            left: 5px;
+            top: 6px;
+          }
+        }
+        .irs-max {
+          background-color: transparent;
+          width: 50%;
+          height: 32px;
+          color: #000;
+          padding: 1px 5px 1px 14.5px;
+          border: 1px solid #ebebeb;
+          top: 4rem;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+
+          &::before {
+            display: none;
+          }
+          &::after {
+            content: "$";
+            position: absolute;
+            left: 5px;
+            top: 6px;
+          }
+        }
+        .irs-single {
+          background-color: $secondary-color;
+          padding: 1px 5px 1px 11.5px;
+          &::before {
+            border-top-color: $secondary-color;
+          }
+          &::after {
+            content: "$";
+            position: absolute;
+            left: 5px;
+            top: 0.5px;
+          }
+        }
+        .irs-bar {
+          background-color: $secondary-color;
+          height: 7px;
+        }
+        .irs-handle {
+          > i {
+            &:first-child {
+              background-color: $secondary-color;
+              width: 9px;
+              height: 24px;
+              border-radius: 4px;
+            }
+          }
+        }
+        .irs-min {
+          padding: 1px 3px 1px 9.5px;
+          &::before {
+            content: "$";
+            position: absolute;
+            left: 3px;
+            top: 0.5px;
+          }
+        }
+        .irs-max {
+          padding: 1px 3px 1px 9.5px;
+          &::before {
+            content: "$";
+            position: absolute;
+            left: 3px;
+            top: 0.5px;
+          }
+        }
+      }
+    }
+  }
+  .size-list-widget {
+    .size-list-row {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      margin-top: -10px;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 10px;
+        a {
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          line-height: 33px;
+          border: 1px solid #eee;
+          text-align: center;
+          font-size: 15px;
+          font-weight: 600;
+          &:hover {
+            border-color: $secondary-color;
+            color: #fff;
+            background-color: $secondary-color;
+          }
+          &:focus {
+            border-color: $secondary-color;
+            color: #fff;
+            background-color: $secondary-color;
+          }
+        }
+        a.active {
+          a {
+            border-color: $secondary-color;
+            color: #fff;
+            background-color: $secondary-color;
+          }
+        }
+      }
+      li.active {
+        a {
+          border-color: $secondary-color;
+          color: #fff;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .brands-list-widget {
+    .brands-list-row {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      li {
+        margin-bottom: 9px;
+        a {
+          display: inline-block;
+          position: relative;
+          padding-left: 25px;
+          font-size: 15px;
+          font-weight: 600;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2.5px;
+            width: 15px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            height: 15px;
+            border-radius: 3px;
+            border: 1px solid #000;
+          }
+          &:hover {
+            color: $secondary-color;
+            &::before {
+              border-color: $secondary-color;
+            }
+          }
+        }
+        a.active {
+          &::before {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+          }
+        }
+        &:last-child {
+          display: inline-block;
+        }
+      }
+      li.active {
+        a {
+          &::before {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .aside-trending-widget {
+    .aside-trending-products {
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      margin-bottom: 1rem;
+      img {
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        width: 100%;
+      }
+      .link-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+      }
+      &:hover {
+        img {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+      &:focus {
+        img {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

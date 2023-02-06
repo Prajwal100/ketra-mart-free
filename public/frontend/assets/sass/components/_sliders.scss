@@ -1,0 +1,49 @@
+.hero-owl-nav{
+  .owl-prev{
+    display: none;
+  }
+
+  .owl-next{
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+  }
+}
+
+.product-slides {
+  z-index: initial;
+}
+
+.custom-owl-nav {
+  display: inline-block !important;
+  position: absolute;
+  top: 9rem;
+  left: 30.3rem;
+  right: auto;
+  z-index: 1;
+
+  button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+
+    i{
+      font-size: 26px;
+    }
+  }
+
+  .owl-prev{
+    background: #ff5a60!important;
+    color: #fff!important;
+    border: none;
+  }
+
+  .owl-next{
+    top: 3.3rem;
+    background: #fff!important;
+    border: 2px solid #E5E5E5!important;
+    color: #000!important;
+  }
+  
+}

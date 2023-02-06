@@ -1,0 +1,46 @@
+
+.search-container {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  width: 100%;
+  background: #000;
+  padding: 0.8rem;
+  opacity: 0;
+  // visibility: hidden;
+  transition: all 0.3s linear;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+    border-bottom: solid 12px #000;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -11px;
+    left: 63px;
+  }
+  form {
+    input {
+      width: 100%;
+      border-radius: 5px;
+      height: 3rem;
+      outline: none;
+      border: none;
+      padding: 1rem;
+    }
+  }
+}
+
+.search-link:hover .search-container{
+    opacity: 1;
+    visibility: visible;
+}
+
+.div-show {
+  opacity: 1!important;
+  visibility: visible!important;
+  top: 60px!important;
+}

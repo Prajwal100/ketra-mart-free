@@ -1,0 +1,19 @@
+.search-form {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: 45px;
+  width: 228px;
+  display: flex;
+  align-items: center;
+
+  .input-search {
+    color: #000;
+    font-size: 14px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  i{
+    font-size: 20px;
+  }
+}

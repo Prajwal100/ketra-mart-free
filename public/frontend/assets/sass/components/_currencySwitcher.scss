@@ -1,0 +1,100 @@
+.language-switcher {
+    position: relative;
+
+    .dropdown-toggle {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        color: #d0d0d0;
+        font-weight: 600;
+        font-size: 14.5px;
+
+
+        &::after {
+            display: none
+        }
+
+
+        img {
+            width: 28px;
+            border-radius: 3px;
+            border: 2px solid #fff;
+            position: relative;
+            top: -2px
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 5px;
+            color: #000;
+
+            i {
+                position: relative;
+                font-size: 20px;
+                top: 4px;
+                margin-left: -3px;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        padding: 15px;
+        float: unset;
+        border: none;
+        -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+        border-radius: 0;
+        display: block;
+        margin-top: 12px;
+        opacity: 0;
+        visibility: visible;
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+
+        .dropdown-item {
+            padding: 0;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: 600;
+
+            &::before {
+                display: none
+            }
+            
+            &:last-child {
+                margin-bottom: 0
+            }
+
+            img {
+                width: 28px;
+            }
+
+            span {
+                display: inline-block;
+                margin-left: 7px
+            }
+
+            
+            &:hover,  &:focus {
+               background-color: transparent!important
+            }
+        }
+    }
+
+
+}
+
+
+ .language-switcher .dropdown-menu .dropdown-item:active,  .language-switcher .dropdown-menu .dropdown-item.active {
+    color: #000;
+    background-color: transparent
+}
+
+ .language-switcher .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}

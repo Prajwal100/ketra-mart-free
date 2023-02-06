@@ -1,0 +1,99 @@
+.ck.ck-toolbar {
+    border: 1px solid #e9edf4 !important;
+    border-radius: 7px 7px 0 0 !important;
+    background: #f6f6fb !important;
+    padding: 8px !important;
+    color: #282f53 !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    border: 1px solid #e9edf4 !important;
+    height: 250px;
+    border-top: 0 !important;
+    border-radius: 0 0 7px 7px !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable.ck-focused {
+    box-shadow: none !important;
+}
+
+.ck.ck-button,
+a.ck.ck-button {
+    background: #fff !important;
+    border: 1px solid #e9edf4;
+    border-radius: 5px;
+}
+
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+    background: transparent !important;
+}
+
+.ck.ck-button:active,
+.ck.ck-button:focus,
+a.ck.ck-button:active,
+a.ck.ck-button:focus {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+.ck-rounded-corners .ck.ck-dropdown__panel,
+.ck.ck-dropdown__panel.ck-rounded-corners,
+.ck.ck-list {
+    border-radius: 7px !important;
+}
+
+.ck.ck-dropdown__panel,
+.ck.ck-balloon-panel {
+    border-radius: 7px !important;
+    border: 1px solid #eaf2f6 !important;
+    box-shadow: 0 3px 9px 0 rgba(104, 113, 123, .15) !important;
+}
+
+.ck.ck-list__item .ck-button.ck-on {
+    color: #282f53 !important;
+}
+
+.ck.ck-input-text {
+    border: 1px solid #eaf2f6 !important;
+    border-radius: 7px !important;
+}
+
+.ck.ck-input-text:focus {
+    box-shadow: none !important;
+}
+
+.ck.ck-balloon-panel[class*=arrow_n]:after,
+.ck.ck-balloon-panel[class*=arrow_n]:before {
+    border-color: #eaf2f6;
+}
+
+.ck-content .table table {
+    border: 1px solid #eaf2f6 !important;
+}
+
+.ck-content .table table td,
+.ck-content .table table th {
+    border: 1px solid #eaf2f6 !important;
+}
+
+.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+.ck-widget.table td.ck-editor__nested-editable:focus,
+.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+.ck-widget.table th.ck-editor__nested-editable:focus {
+    outline: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.ck.ck-balloon-panel[class*=arrow_n]:before {
+    border-bottom-color: #eaf2f6 !important;
+}
+
+.ck.ck-reset_all,
+.ck.ck-reset_all * {
+    color: #858398 !important;
+}
+
+.ck.ck-responsive-form {
+    padding-top: 20px !important;
+}
