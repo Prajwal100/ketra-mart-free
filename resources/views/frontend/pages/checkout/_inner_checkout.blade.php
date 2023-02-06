@@ -2,18 +2,6 @@
     @csrf
     <div class="row gutter-lg">
         <div class="col-lg-12 mb-6">
-            <h6 class="title title-simple text-left">Shipping Options</h6>
-            <ul class="text-left shipping-options">
-                @foreach(\App\Models\Shipping::where('status','active')->get() as $key=>$shipping)
-                    <li>
-                        <div class="custom-radio">
-                            <input onchange="set_shipping_id(this.value)" type="radio" id="free-shipping{{$key}}" name="shipping" required
-                                   class="custom-control-input" {{session()->has('shipping_method_id') ? ((session('shipping_method_id')==$shipping->id) ? 'checked' : '') : ''}}  value="{{$shipping->id}}">
-                            <label class="custom-control-label" for="free-shipping{{$key}}">{{ucfirst($shipping->shipping_address.' ('. $shipping->delivery_time.') '.Helper::currency_converter($shipping->delivery_charge))}}</label>
-                        </div>
-                    </li>
-                @endforeach
-            </ul>
             <h6 class="title title-simple text-left mb-3">Billing Details </h6>
             <div class="row">
                 @php
@@ -205,107 +193,8 @@
                                             Delivery</label>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="radio-item_1">
-                                        <input id="paypal" value="paypal" name="payment_method" type="radio" required="">
-                                        <label for="paypal" class="radio-label_1">Paypal Payment</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="radio-item_1">
-                                        <input id="stripe" value="stripe" name="payment_method" type="radio" required="">
-                                        <label for="stripe" class="radio-label_1">Stripe Payment</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="radio-item_1">
-                                        <input id="razor" value="razor" name="payment_method" type="radio" required="">
-                                        <label for="razor" class="radio-label_1">Razor Payment</label>
-                                    </div>
-                                </li>
+
                             </ul>
-                            <div class="">
-                                <div class="payment-meth" data-method="paypal">
-                                    <h4>Paypal</h4>
-                                    <p>You will be redirected to Paypal account to complete your payment:</p>
-                                </div>
-
-                                <!-- card payment -->
-                                <div class="payment-meth" data-method="stripe">
-                                    <h4>Credit / Debit Card</h4>
-
-                                    <div class="row">
-                                        <div class="control-group form-group col-md-6">
-                                            <label for="card_holder_name">Holder Name <span class="text-danger">*</span></label>
-                                            <input class="form-control js-stripe" type="text" id="card_holder_name" value="{{ old('card_holder_name') }}" name="card_holder_name">
-
-                                            @if ($errors->has('card_holder_name'))
-                                                <small class="text-danger">
-                                                    {{ $errors->first('card_holder_name') }}
-                                                </small>
-                                            @endif
-                                        </div>
-
-                                        <div class="control-group form-group col-md-6">
-                                            <label for="card_number">Card Number <span class="text-danger">*</span></label>
-                                            <input class="form-control js-stripe" type="text" id="card_number" value="{{ old('card_number') }}" name="card_number">
-
-                                            @if ($errors->has('card_number'))
-                                                <small class="text-danger">
-                                                    {{ $errors->first('card_number') }}
-                                                </small>
-                                            @endif
-                                        </div>
-
-                                        <div class="control-group form-group col-md-3">
-                                            <label for="card_month">Month <span class="text-danger">*</span></label>
-                                            <select class="form-control select2 form-select material-form__input js-stripe" name="month" id="card_month">
-                                                @for($i=1;$i<=12;$i++)
-                                                    <?php if($i < 10)
-                                                        $i = '0'.$i;
-                                                    ?>
-                                                    <option value="{{ $i }}">{{ $i }}</option>
-                                                @endfor
-                                            </select>
-                                            @if ($errors->has('month'))
-                                                <small class="text-danger">
-                                                    {{ $errors->first('month') }}
-                                                </small>
-                                            @endif
-                                        </div>
-                                        <div class="control-group form-group col-md-3">
-                                            <label for="card_year">Year <span class="text-danger">*</span></label>
-                                            <select class="form-control select2 form-select material-form__input js-stripe" name="year" id="card_year">
-                                                @for($i=date('Y');$i<=date('Y')+10;$i++)
-                                                    <option value="{{ $i }}">{{ $i }}</option>
-                                                @endfor
-                                            </select>
-                                            @if ($errors->has('year'))
-                                                <small class="text-danger">
-                                                    {{ $errors->first('year') }}
-                                                </small>
-                                            @endif
-                                        </div>
-
-                                        <div class="control-group form-group col-md-6">
-                                            <label for="card_cvc">CVC <span class="text-danger">*</span></label>
-                                            <input class="form-control js-stripe" type="text" id="card_cvc" value="{{ old('cvc') }}" name="cvc">
-
-                                            @if ($errors->has('cvc'))
-                                                <small class="text-danger">
-                                                    {{ $errors->first('cvc') }}
-                                                </small>
-                                            @endif
-                                        </div>
-                                        <div class="col-md-12 error" id="js-stripe-error" style="display: none">
-                                            <div class="alert alert-danger alert-dismissible">
-                                                Stripe payment error!
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <hr>
@@ -335,10 +224,6 @@
                                 <span class="value">{{Helper::currency_converter($coupon_discount)}}</span>
                             </li>
 
-                            <li class="charges">
-                                <span class="key">Shipping Fee:</span>
-                                <span class="value" data-value="0">{{Helper::currency_converter($shipping_cost)}}</span>
-                            </li>
 
                             <li class="grand-total">
                                 <span class="key">GRAND TOTAL:</span>

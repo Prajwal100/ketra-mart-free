@@ -37,20 +37,7 @@
                         <button id="login_btn" type="submit" class="default-btn secondary-btn mt-5">Sign In <span
                                 class="bx bx-right-arrow-alt float-right ml-3"></span></button>
 
-                        <div class="my-4 text-center social-login-options">
-                            <span>or Sign In via</span>
-                        </div>
-                        <div class="pt-2 social-login-links">
-                            <a href="{{ url('/login/facebook') }}" class="login-social-item fb-bg">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
 
-                            <a href="{{ url('/login/google') }}" class="login-social-item" style="background: #e45547;">
-                                <i class="fab fa-google"></i>
-                                <span>Google</span>
-                            </a>
-                        </div>
                     </form>
                     <form class="form-wrapper" action="{{ route('register') }}" id="register_form" style="display: none;"
                         method="post">
@@ -88,20 +75,7 @@
                         <button type="submit" id="register_btn" class="default-btn secondary-btn mt-5">Sign Up <span
                                 class="bx bx-right-arrow-alt float-right ml-3"></span></button>
 
-                        <div class="my-4 text-center social-login-options">
-                            <span>or Sign In via</span>
-                        </div>
-                        <div class="pt-2 social-login-links">
-                            <a href="{{ url('/login/facebook') }}" class="login-social-item fb-bg">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
 
-                            <a href="{{ url('/login/google') }}" class="login-social-item" style="background: #e45547;">
-                                <i class="fab fa-google"></i>
-                                <span>Google</span>
-                            </a>
-                        </div>
                     </form>
                 </div>
             </div>

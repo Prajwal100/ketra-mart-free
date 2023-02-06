@@ -25,7 +25,6 @@
         "niklasravnsborg/laravel-pdf": "^4.0",
         "paypal/paypal-checkout-sdk": "dev-master",
         "razorpay/razorpay": "2.*",
-        "silviolleite/laravelpwa": "^2.0",
         "spatie/laravel-cookie-consent": "^2.12",
         "spatie/laravel-image-optimizer": "^1.6",
         "stripe/stripe-php": "^10.4"

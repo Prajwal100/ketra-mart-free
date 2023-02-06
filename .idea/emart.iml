@@ -14,7 +14,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/uri-interfaces" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/razorpay/razorpay" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/rmccue/requests" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/silviolleite/laravelpwa" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/stripe/stripe-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
     </content>

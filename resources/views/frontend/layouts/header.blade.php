@@ -52,24 +52,6 @@
                 }
             @endphp
 
-                <!-- Currency Picker -->
-                <div class="dropdown language-switcher d-inline-block float-left">
-                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                        <img src="{{$currency_img!=null ? asset($currency_img) : Helper::DefaultImage()}}" class="shadow-sm" alt="flag">
-                        <span>{{$currency_code}} <i class='bx bx-chevron-down'></i></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        @foreach(\App\Models\Currency::where('status','active')->orderBy('id','ASC')->get() as $currency)
-                        <a href="javascript:;" onclick="currency_change('{{$currency['code']}}')" class="dropdown-item d-flex align-items-center">
-                            <img src="{{$currency['flag_path']!=null ? asset($currency['flag_path']) : Helper::DefaultImage()}}" class="shadow-sm" alt="flag">
-                            <span>{{\Illuminate\Support\Str::upper($currency->code)}}</span>
-                        </a>
-                        @endforeach
-
-                    </div>
-                </div>
-                <!-- Currency Picker Ends-->
 
                 <!-- Search Form -->
                 <div class="float-right">
@@ -103,10 +85,7 @@
             <div class="col-lg-4">
                 <ul class="header-widgets-menu">
                     <li class="">
-                        <a href="{{route('order-status')}}">
-                            <img src="{{asset('frontend/assets/images/icons/orderStatus.svg')}}" alt="Order Status Icon" class="img-icon">
-                            <span> Order Status</span>
-                        </a>
+
                     </li>
                     @auth
                         <li class="">

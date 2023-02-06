@@ -40,9 +40,6 @@
                 </li>
 
 
-                <a class="side-menu__item {{request()->is('*/media*') ? 'active' :''}}" href="{{route('media.index')}}"><i class="side-menu__icon fa fa-image"></i><span class="side-menu__label">Media Management</span></a>
-
-
                 <li class="slide">
                     <a class="side-menu__item {{( request()->is('*/categories/*') || request()->is('*/product/*') || request()->is('*/products/*') || request()->is('*/attributes*')) ? 'active' :''}}" data-bs-toggle="slide" href="javascript:;"><i class="side-menu__icon fe fe-shopping-bag"></i><span class="side-menu__label">Product Management</span><i class="angle fe fe-chevron-right"></i></a>
                     <ul class="slide-menu">
@@ -59,10 +56,6 @@
 
 
 
-                            <li><a href="{{route('product.bulk.index')}}" class="slide-item">Product Import</a></li>
-
-
-                            <li><a href="{{route('products.export')}}" class="slide-item">Product Export</a></li>
                         @endif
 
                     </ul>
@@ -81,46 +74,15 @@
                         </ul>
                     </li>
 
-                    <li class="slide">
-                        <a class="side-menu__item {{request()->is('*/shipping*') ? 'active' :''}}" data-bs-toggle="slide" href="#"><i class="side-menu__icon fe fe-truck"></i><span class="side-menu__label">Shipping Management</span><i class="angle fe fe-chevron-right"></i></a>
-                        <ul class="slide-menu">
-                            <li><a href="{{route('shipping.index')}}" class="slide-item"> All Shipping</a></li>
-                            <li><a href="{{route('shipping.create')}}" class="slide-item"> Add Shipping</a></li>
-                        </ul>
-                    </li>
-
-                @endif
-
-                @if(Helper::check_permission("review"))
-                <li class="slide">
-                    <a class="side-menu__item {{request()->is('*/reviews*') ? 'active' :''}}" data-bs-toggle="slide" href="#"><i class="side-menu__icon fe fe-star"></i><span class="side-menu__label">Reviews & Rating</span><i class="angle fe fe-chevron-right"></i></a>
-                    <ul class="slide-menu">
-                        <li><a href="{{route('reviews.index')}}" class="slide-item"> All Reviews</a></li>
-                        <li><a href="{{route('reviews.pending')}}" class="slide-item">Pending Reviews</a></li>
-                        <li><a href="{{route('reviews.accepted')}}" class="slide-item">Accepted Reviews</a></li>
-                        <li><a href="{{route('reviews.rejected')}}" class="slide-item">Rejected Reviews</a></li>
-                    </ul>
-                </li>
 
                 @endif
 
 
-                @if(Helper::check_permission("coupon"))
-                    <a class="side-menu__item {{request()->is('*/coupon*') ? 'active' :''}}" href="{{route('coupon.index')}}"><i class="side-menu__icon fa fa-gift"></i><span class="side-menu__label">Coupon Management</span></a>
-                @endif
+
 
                 <li class="sub-category">
                     <h3>USERS</h3>
                 </li>
-                @if(Helper::check_permission("staff"))
-                    <li class="slide ">
-                        <a class="side-menu__item {{(request()->is('*/staff*') || request()->is('*/roles*')) ? 'active' :''}}" data-bs-toggle="slide" href="#"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Staff Management</span><i class="angle fe fe-chevron-right"></i></a>
-                        <ul class="slide-menu">
-                            <li><a href="{{route('staff.index')}}" class="slide-item">Staff</a></li>
-                            <li><a href="{{route('roles.index')}}" class="slide-item"> Staff Permission</a></li>
-                        </ul>
-                    </li>
-                @endif
 
                 @if(Helper::check_permission("customer"))
                     <li class="slide">
@@ -159,9 +121,7 @@
                             <li><a href="{{route('settings')}}" class="slide-item">Site Settings</a></li>
                             <li><a href="{{route('contact.message')}}" class="slide-item">Contact Messages</a></li>
                             <li><a href="{{route('subscribe.index')}}" class="slide-item">Subscribers</a></li>
-                            <li><a href="{{route('social.login')}}" class="slide-item">Social Media Logins</a></li>
                             <li><a href="{{route('smtp.settings')}}" class="slide-item">SMTP Settings</a></li>
-                            <li><a href="{{route('payment.method')}}" class="slide-item">Payment Methods</a></li>
                         </ul>
                     </li>
 

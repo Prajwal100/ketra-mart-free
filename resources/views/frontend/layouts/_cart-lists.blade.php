@@ -140,40 +140,7 @@
     <div class="cart-buttons ">
         <div class="row align-items-center">
             <div class=" col-lg-4 col-md-7 col-12 form-wrapper">
-                <div class="d-none d-lg-block">
-                    <form id="coupon-code-ajax" method="post">
-                        <div class="form-group" id="coupon-form">
-                            <label for="" class="form-label">Got a Discount code?</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="desktop_code"
-                                       placeholder="Enter your coupon code here" value="" name="code">
-                                <div class="input-group-prepend">
-                                    <button id="coupon-btn" type="button"
-                                            class="input-group-text apply-coupon-btn apply-coupon"> Apply
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
-                <div class="d-block d-lg-none">
-
-                    <form id="coupon-code-ajax" method="post">
-                        <div class="form-group" id="coupon-form">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Got a discount code?" value=""
-                                       name="mobile_code">
-                                <div class="input-group-prepend">
-                                    <button id="coupon-btn" type="button"
-                                            class="apply-coupon-mobile apply-coupon input-group-text "><i
-                                            class="fas fa-angle-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
                 <a href="{{ route('home') }}" class="optional-btn mt-3 text-capitalize d-none d-lg-inline-block">
                     <i class="bx bx-left-arrow-alt float-left mr-3"></i>

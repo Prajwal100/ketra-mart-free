@@ -148,7 +148,6 @@
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
       <path value="$PROJECT_DIR$/vendor/razorpay/razorpay" />
       <path value="$PROJECT_DIR$/vendor/rmccue/requests" />
-      <path value="$PROJECT_DIR$/vendor/silviolleite/laravelpwa" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/league/uri" />
       <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />

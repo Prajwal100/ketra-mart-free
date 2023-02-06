@@ -240,7 +240,7 @@
                                                             </td>
                                                             <td>{{$item['variation']}}</td>
                                                             <td>{{ $item->quantity }}</td>
-                                                            <td>{{Helper::currency_converter($item->product->stocks->where('variant',$item['variation'])->where('product_id',$item->product->id)->first()->price)}}
+                                                            <td>{{$item['variation'] ? Helper::currency_converter($item->product->stocks->where('variant',$item['variation'])->where('product_id',$item->product->id)->first()->price) : Helper::currency_converter($item->price,2)}}
                                                             </td>
                                                             <td>
                                                                 {{ Helper::currency_converter($item->price) }}

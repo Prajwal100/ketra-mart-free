@@ -219,9 +219,7 @@
                                                     <span
                                                         class="text-secondary-d1 text-105 float-left d-none d-lg-block">Thank
                                                         you for shopping with us!!</span>
-                                                    <a href="{{ route('order-status') }}"
-                                                        class="btn primary-btn btn-bold px-4 mt-3 mt-lg-0"
-                                                        style="vertical-align: middle">Track Order</a>
+
                                                 </div>
                                             </div>
                                         </div>

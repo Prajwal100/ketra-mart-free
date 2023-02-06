@@ -89,12 +89,6 @@ Route::group(['prefix'=>'dashboard','middleware'=>['admin']],function(){
 
     /******** end product section *********/
 
-    /******** Product Import & Export *********/
-    Route::get('product-export',[\App\Http\Controllers\ProductBulkController::class,'export'])->name('products.export');
-    Route::get('product-import',[\App\Http\Controllers\ProductBulkController::class,'index'])->name('product.bulk.index');
-    Route::post('product-import',[\App\Http\Controllers\ProductBulkController::class,'import'])->name('product.import');
-    Route::get('category-pdf',[\App\Http\Controllers\ProductBulkController::class,'pdf_category_download'])->name('pdf.category');
-    /******** start flash deal product section *********/
 
     /******** start order section *********/
 
@@ -106,40 +100,6 @@ Route::group(['prefix'=>'dashboard','middleware'=>['admin']],function(){
     Route::get('/order/cancelled',[\App\Http\Controllers\OrderController::class,'cancelledOrder'])->name('cancelled.order');
 
     /******** end order section *********/
-
-    /******** start shipping section *********/
-
-    Route::resource('/shipping',\App\Http\Controllers\ShippingController::class);
-    Route::delete('shipping-delete-all',[\App\Http\Controllers\ShippingController::class,'deleteAll'])->name('shipping.delete.all');
-
-    /******** end shipping section *********/
-
-    /******** Start product review section *********/
-
-    Route::resource('reviews',\App\Http\Controllers\ProductReviewController::class);
-    Route::get('/review/pending',[\App\Http\Controllers\ProductReviewController::class,'pendingReview'])->name('reviews.pending');
-    Route::get('/review/accepted',[\App\Http\Controllers\ProductReviewController::class,'acceptedReview'])->name('reviews.accepted');
-    Route::get('/review/rejected',[\App\Http\Controllers\ProductReviewController::class,'rejectedReview'])->name('reviews.rejected');
-
-    Route::delete('review-delete-all',[\App\Http\Controllers\ProductReviewController::class,'deleteAll'])->name('review.delete.all');
-
-    /******** end product review section *********/
-
-
-    Route::resource('/coupon',\App\Http\Controllers\CouponController::class);
-    Route::delete('coupon-delete-all',[\App\Http\Controllers\CouponController::class,'deleteAll'])->name('coupon.delete.all');
-
-    /******** start staff roles section *********/
-
-    Route::resource('/roles',\App\Http\Controllers\RoleController::class);
-
-    /******** end staff roles section *********/
-
-    /******** start staff section *********/
-
-    Route::resource('/staff',\App\Http\Controllers\StaffController::class);
-
-    /******** end staff section *********/
 
 
     /******** start customer section *********/
