@@ -57,7 +57,6 @@
                         <h3>Customer Center</h3>
                         <ul class="customer-support">
                             <li><a href="{{route('contact.us')}}" class="d-inline-block d-none">Contact Us</a></li>
-                            <li><a href="{{route('order-status')}}">Track Your Order</a></li>
                             <li><a href="{{route('contact.us')}}" class="d-md-none d-inline-block">Contact us</a></li>
                             <li><a href="{{route('frontend.cancellation.policy')}}">Cancellation Policy</a></li>
                             <li><a href="{{route('frontend.faq')}}">FAQ</a></li>

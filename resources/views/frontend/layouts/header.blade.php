@@ -23,7 +23,7 @@
                         <span class="">{{strtoupper(get_settings('office_time'))}}</span>
                     </li>
                     <li>
-                        <a href="https://wa.link/82cdga" class="btn btn-info py-2 px-3" style="border-radius: 30px;">Buy In 49$</a>
+                        <a target="_blank" href="https://wa.link/82cdga" class="btn btn-info py-2 px-3" style="border-radius: 30px;">Buy In 49$</a>
                     </li>
                 </ul>
             </div>
