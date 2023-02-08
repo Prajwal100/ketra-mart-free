@@ -1,5 +1,5 @@
 
-# Features :
+## APP FEATURES :
 
 ## ====== FRONT-END =======
 - PWA (progressive web app)
@@ -28,6 +28,7 @@ many more......
 - System config: email setting, info shop, maintain status,...
 - Contact Messages, Subscriber management
 - Profile Settings
+
 Many more....
 
 
@@ -48,7 +49,7 @@ Many more....
   ### Screenshots-Demo
   <kbd>![screenshot-demo1](./screenshots/white-dashboard.png)</kbd><br>
   
-  <kbd>![screenshot-demo2](./screenshots/black-dashboard.png)</kbd><br>
+  <kbd>![screenshot-demo2](./screenshots/dark-dashboard.png)</kbd><br>
   
  <kbd>![screenshot-demo3](./screenshots/add-product.png)</kbd><br>
  
@@ -60,6 +61,16 @@ Many more....
    
   <kbd>![screenshot-demo7](./screenshots/order-detail.png)</kbd><br>
     
-  <kbd>![screenshot-demo8](./screenshots/general-settings.png)</kbd><br>
+  <kbd>![screenshot-demo8](./screenshots/genera-settings.png)</kbd><br>
 
+ ## Author Contact
+  Contact me with any questions!<br>
+
+  Email: Prajwal.iar@gmail.com
+
+  ## License
+  This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
+<hr>
+  Copyright © 2023 [Prajwal R.](https://raiprajwal.com/)
+  
 <p style="text-align:center">Thank You so much for your time !!!</p>
