@@ -44,4 +44,22 @@ Many more....
 - Visit ```localhost:8000``` in your browser
 - Visit /admin if you want to access the admin panel. Admin Email/Password: ```admin@gmail.com```/```admin123```. 
 
+
+  ### Screenshots-Demo
+  <kbd>![screenshot-demo1](./screenshots/white-dashboard.png)</kbd><br>
+  
+  <kbd>![screenshot-demo2](./screenshots/black-dashboard.png)</kbd><br>
+  
+ <kbd>![screenshot-demo3](./screenshots/add-product.png)</kbd><br>
+ 
+ <kbd>![screenshot-demo4](./screenshots/product-list.png)</kbd><br>
+ 
+  <kbd>![screenshot-demo5](./screenshots/category-list.png)</kbd><br>
+  
+  <kbd>![screenshot-demo6](./screenshots/order-list.png)</kbd><br>
+   
+  <kbd>![screenshot-demo7](./screenshots/order-detail.png)</kbd><br>
+    
+  <kbd>![screenshot-demo8](./screenshots/general-settings.png)</kbd><br>
+
 <p style="text-align:center">Thank You so much for your time !!!</p>
