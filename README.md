@@ -2,7 +2,6 @@
 ## APP FEATURES :
 
 ## ====== FRONT-END =======
-- PWA (progressive web app)
 - Responsive Layout
 - Shopping Cart, Wishlist
 - Product attributes: price, stock, size...
