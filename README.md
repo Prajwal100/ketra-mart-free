@@ -1,6 +1,12 @@
 
 ## APP FEATURES :
 
+#### DEMO URL
+https://free.ketramart.com
+
+#### ADMIN LOGIN
+https://free.ketramart.com/admin
+
 ## ====== FRONT-END =======
 - Responsive Layout
 - Shopping Cart, Wishlist
