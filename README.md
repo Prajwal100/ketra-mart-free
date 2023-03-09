@@ -1,8 +1,20 @@
 
 ## APP FEATURES :
 
+#### DEMO URL
+https://free.ketramart.com
+
+https://ketramart.com
+
+#### ADMIN LOGIN
+https://free.ketramart.com/admin
+
+https://ketramart.com/admin
+
+#### FEATURES
+https://features.ketramart.com
+
 ## ====== FRONT-END =======
-- PWA (progressive web app)
 - Responsive Layout
 - Shopping Cart, Wishlist
 - Product attributes: price, stock, size...
